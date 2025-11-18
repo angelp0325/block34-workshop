@@ -1,12 +1,7 @@
 import express from "express";
+import employees from "./db/employees.js";
 
 const app = express();
-
-const employees = [
-  { id: 1, name: "Alice" },
-  { id: 2, name: "Bob" },
-  { id: 3, name: "Charlie" },
-];
 
 app.get("/", (req, res) => {
   res.send("Hello employees!");
